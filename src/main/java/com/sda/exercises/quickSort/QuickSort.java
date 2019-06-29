@@ -4,7 +4,7 @@ import java.util.List;
 
 public class QuickSort {
 
-    List<Integer> sort(List<Integer> unsortedList,
+    public List<Integer> sort(List<Integer> unsortedList,
                        Integer left,
                        Integer right) {
 
