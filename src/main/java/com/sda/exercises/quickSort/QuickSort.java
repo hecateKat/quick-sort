@@ -4,18 +4,15 @@ import java.util.List;
 
 public class QuickSort {
 
-    public List<Integer> sort(List<Integer> unsortedList,
-                       Integer left,
-                       Integer right) {
+    public void sort(List<Integer> unsortedList,
+                              Integer left,
+                              Integer right) {
 
         if (left < right) {
             Integer pivot = partition(unsortedList, left, right);
             sort(unsortedList, left, pivot - 1);
             sort(unsortedList, pivot + 1, right);
         }
-
-
-        return unsortedList;
     }
 
     private Integer partition(List<Integer> unsortedList, int left, int right) {
