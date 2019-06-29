@@ -4,6 +4,11 @@ import java.util.List;
 
 public class QuickSort {
 
+    public List<Integer> quicksort (List<Integer> unsortedList){
+        sort(unsortedList, 0, unsortedList.size() -1);
+        return unsortedList;
+    }
+
     public void sort(List<Integer> unsortedList,
                               Integer left,
                               Integer right) {
